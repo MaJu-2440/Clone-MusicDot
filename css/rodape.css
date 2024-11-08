@@ -1,0 +1,107 @@
+.rodape {
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 500;
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.footer_logo {
+    width: 11.25em;
+    margin-bottom: .7rem;
+}
+.footer_info {
+    font-weight: 400;
+    line-height: 1.5;
+}
+.footer_redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.footer_redes-item {
+    width: 2.62em;
+    margin: 0 .25em;
+
+    img {
+        width: 100%;
+    }
+}
+.footer_subtitulo {
+    margin-bottom: 1em;
+
+    font-size: 1.45em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer_links li {
+    margin: .625em 0;
+}
+
+/*FORMULÁRIO DO RODAPÉ*/
+
+.footer_formulario {
+    border: 2px solid #e93d50;
+    background-color: #e93d50;
+    border-radius: 7px;
+    
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.footer_formulario input {
+    border: none;
+    flex-grow: 1;
+    padding: .6rem .4rem;
+}
+.footer_formulario button {
+    text-transform: uppercase;
+    border: none;
+    flex-grow: 1;
+    
+    color: #fff;
+    font-weight: bold;
+    background-color: #e93d50;
+}
+
+@media (max-width: 640px) {
+    .footer_secao {
+        margin-top: 2em;
+    }
+}
+@media (min-width: 640px) and (max-width: 1200px) {
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 1rem;
+    }
+    .footer_links {
+        order: -1;
+        margin-bottom: 2em;
+    }
+    .footer_secao {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        font-size: .85rem;
+        gap: 1rem;
+    }
+    .footer_secao {
+        width: 25%;
+        text-align: left;
+    }
+    .footer_subtitulo {
+        font-size: 1em;
+    }
+    .footer_redes {
+        justify-content: left;
+    }
+}
